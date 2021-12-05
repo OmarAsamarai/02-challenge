@@ -6,51 +6,75 @@
     --background2: rgb(189, 215, 241);
     --nav-font-size: 2vw;
   }
-
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: azure;
-    font-size: 16px;
-    text-align: center;
+    background-color: rgb(229, 236, 236);
+    font-size:16px;
 }
 
-#header1 {
-    background-color: rgb(86, 206, 116);
+.header1 {
+    background-color: #070000;
     text-align: center;
-    line-height: 2.5;
-}
-
-.main {
+    line-height: 1.5;
+    position: sticky; top: 0;
+    position: -webkit-sticky;
     width: 100%;
+    padding: 5px;
+    border-radius: 1pc;
+
+}
+.header1 h1 {
+    color:rgb(253, 251, 251);
+    font-size: px;
+    
+}
+.main {
+    width:fit-content;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color:lightgoldenrodyellow
+    background-color: var(--background2);
+    align-content: space-around;
+    align-content: center;
 
 }
 
 .grid {
-    margin: 20px;
+    margin: 10px 10px 10px 10px;
     padding: 1em;
     flex: 1;
-    background: white;
+    background: rgb(252, 250, 250);
     color: rgb(238, 51, 51);
     border-radius: 1pc;
-    border: 20px;
+    border: solid;
     border-color: rgb(128, 15, 15);
-    margin: 0 auto;
-    width: 100%;
-    justify-content: space-around;
+    max-width: 500px;
+    min-width: 300px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-basis: auto;
 }
 .grid img {
-    padding: 1em;
-    width: auto;
-    height: auto;
-    border-radius: 10pc;
+    padding:1em;
     display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+.grid a {
+    text-decoration: none;
+    color:brown;
+}
+.grid a:hover {
+    color: blue;
+    background: yellow;
+    border-radius: 1pc;
+    padding: 5px;
 }
 
 /*Develper details style*/
@@ -122,7 +146,7 @@ article {
     width: 100%;
     height: auto;
     justify-content: space-around;
-    background-color: rgb(86, 206, 116);
+    background-color: var(--background2);
 }
 .work h2 {
     margin: 10px;
@@ -131,18 +155,18 @@ article {
 
 .work-img {
     flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-around;
+    width: 85%;
+    justify-content: space-evenly;
     display: flex;
-    margin: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .work img {
-    width: 350px;
-    max-width: 500px;
-    height: auto;
+    max-width:350px;
+    height: 200px;
     object-fit: cover;
-    display: block;
-    box-sizing: border-box;
+    display:block;
 }
 
 .work img:hover {
@@ -158,9 +182,8 @@ article {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 100%; 
-    border-style: solid;
-    background:rgb(188, 206, 86) 
+    width: 100%;
+    
 }
 .contact h2 {
     font-size: var(--h2-font-size);
@@ -182,15 +205,20 @@ article {
     padding: 20px;
     font-weight: lighter;
     font-size: var(--nav-font-size);
+    text-decoration: none;
 }
 .contact nav ul li a:hover {
     padding: 5px;
-    font-size: 2.2vw;
+    font-size: 2vw;
     background-color: yellow;
     border-radius: 1pc;
 }
 .resume {
-    display: flex; 
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--background2)
 }
 .resume h2 {
     margin: 10px;
@@ -201,5 +229,136 @@ article {
     text-align: left;
     width: 75%;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .trainer {
+      flex: 0 70%;
+    }
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }
+  }
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .trainer {
+      flex: 0 70%;
+    }
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }
+  }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  
+    .trainer-bio h3, .trainer-bio h4 {
+      display: block;
+    }
+  }
 
 
