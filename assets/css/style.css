@@ -2,11 +2,13 @@
 /*style of the page*/
 :root {
     --h2-font-size: 28px;
-    --h2-color: 5px 42px;
     --background1: rgb(0, 140, 255);
     --background2: rgb(189, 215, 241);
     --nav-font-size: 2vw;
+    --h2-font-color: darkblue;
+    --h2-font-family: 'Times New Roman', Times, serif;
   }
+  
 * {
     box-sizing: border-box;
 }
@@ -21,15 +23,13 @@ body {
     background-color: #070000;
     text-align: center;
     line-height: 1;
-    position: sticky; top: 0;
-    position: -webkit-sticky;
     width: 100%;
     padding: 5px;
 
 }
 .header1 h1 {
     color:rgb(253, 251, 251);
-    font-size: px;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 .main {
@@ -43,8 +43,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     justify-content: space-evenly;
-
-
 
 }
 
@@ -66,17 +64,25 @@ body {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px;
+    width: 300px;
+}
+
+.grid h2 {
+    font-size: var(--h2-font-size);
+    color: var(--h2-font-color);
+    font-family: var(--h2-font-family);
+    padding: 0;
+    margin: 0;
 }
 .grid a {
     text-decoration: none;
-    color:brown;
+    color:rgb(0, 0, 0);
+    line-height: 3;
 }
 .grid a:hover {
-    color: blue;
-    background: yellow;
-    border-radius: 1pc;
-    padding: 5px;
+    text-decoration: underline;
+    color:blue;
+    
 }
 
 /*Develper details style*/
@@ -98,6 +104,8 @@ article {
     margin: 20px;
     font-weight: bold;
     font-size: var(--h2-font-size);
+    color: var(--h2-font-color);
+    font-family: var(--h2-font-family);
     color:darkblue;
     justify-content: start;
     align-items: flex-start;
@@ -119,16 +127,15 @@ article {
 
 .devheader nav ul li a {
     padding: 10px;
+    color:rgb(0, 0, 0);
     text-decoration: none;
     font-weight: lighter;
     font-size: var(--nav-font-size)
 }
 
 .devheader nav ul li a:hover {
-    color: blue;
-    background: yellow;
-    border-radius: 1pc;
-    padding: 5px;
+    text-decoration: underline;
+    color:blue;
 }
 
 .about-me {
@@ -141,7 +148,8 @@ article {
 
 .about-me h2 {
     font-size: var(--h2-font-size);
-    color:darkblue;
+    color: var(--h2-font-color);
+    font-family: var(--h2-font-family);
 }
 
 .about-me p {
@@ -160,7 +168,8 @@ article {
 }
 .work h2 {
     font-size: var(--h2-font-size);
-    color:darkblue;
+    color: var(--h2-font-color);
+    font-family: var(--h2-font-family);
     margin: 20px;
 }
 
@@ -174,15 +183,14 @@ article {
 
 }
 .work img {
-    width: 380px;
+    width: 350px;
     object-fit: cover;
     display:block;
 }
 
 .work img:hover {
-    top: -1;
     opacity: 80%; 
-    width: 700px;
+    width: 100%;
     border-radius: 2pc;
 } 
 
@@ -195,7 +203,8 @@ article {
 }
 .contact h2 {
     font-size: var(--h2-font-size);
-    color:darkblue;
+    color: var(--h2-font-color);
+    font-family: var(--h2-font-family);
     margin: 20px;
 }
 .contact nav {
@@ -215,12 +224,11 @@ article {
     font-weight: lighter;
     font-size: var(--nav-font-size);
     text-decoration: none;
+    color: black
 }
 .contact nav ul li a:hover {
-    padding: 5px;
-    font-size: 2vw;
-    background-color: yellow;
-    border-radius: 1pc;
+    text-decoration: underline;
+    color:blue;
 }
 .resume {
     padding: 20px;
@@ -231,7 +239,8 @@ article {
 }
 .resume h2 {
     font-size: var(--h2-font-size);
-    color:darkblue;
+    color: var(--h2-font-color);
+    font-family: var(--h2-font-family);
 }
 .resume p {
     text-align: left;
