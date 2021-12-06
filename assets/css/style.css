@@ -50,8 +50,8 @@ body {
     border-radius: 1pc;
     border: solid;
     border-color: rgb(3, 3, 3);
-    width: 300px;
-    max-width: 300px;
+    width: 350px;
+    max-width: 400px;
     text-align: center;
     flex-basis: auto;
     
@@ -60,7 +60,7 @@ body {
 .grid img {
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 300px;
 }
 
 .grid h2 {
@@ -322,7 +322,7 @@ article {
   @media screen and (max-width: 575px) {
     .grid {
         width: 200px;
-        max-width: 200px;   
+        max-width: 300px;   
     }
     
     .grid img {
