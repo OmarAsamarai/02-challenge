@@ -1,4 +1,4 @@
-# A Web Developers Portfolio
+# Web Developers Portfolio
 ## <li>The employer asked to have a portfolio of the developers so they can choose one of them.
 ---
 ## <li>The work includes:
